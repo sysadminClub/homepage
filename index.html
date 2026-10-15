@@ -30,20 +30,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             border: 1px solid #334155;
         }
-        .terminal-header {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 20px;
-            justify-content: flex-start;
-        }
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        .dot.red { background-color: #ef4444; }
-        .dot.yellow { background-color: #eab308; }
-        .dot.green { background-color: #22c55e; }
         h1 {
             color: #38bdf8;
             font-size: 2.5rem;
@@ -67,19 +53,25 @@
             border: 1px solid rgba(34, 197, 94, 0.3);
             margin-bottom: 25px;
         }
-        .features {
-            text-align: left;
-            background: #0f172a;
-            padding: 20px;
+        .showcase-box {
+            background: rgba(56, 189, 248, 0.05);
+            padding: 25px;
             border-radius: 8px;
-            border-left: 4px solid #38bdf8;
-            font-family: 'Courier New', Courier, monospace;
-            margin-bottom: 20px;
+            border: 1px dashed #38bdf8;
+            margin-bottom: 25px;
+            text-align: center;
         }
-        .features-title {
+        .showcase-title {
             color: #e2e8f0;
-            font-weight: bold;
-            margin-bottom: 8px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .showcase-text {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
         }
         .footer {
             margin-top: 20px;
@@ -91,25 +83,22 @@
 <body>
 
     <div class="container">
-        <div class="terminal-header">
-            <div class="dot red"></div>
-            <div class="dot yellow"></div>
-            <div class="dot green"></div>
-        </div>
-        
         <div class="status-badge">✓ All Systems Operational</div>
         
         <h1>SysAdmin Club</h1>
         <p>Welcome to the official hub of SysAdmin Club. We are currently configuring our core infrastructure, active directory environments, and cloud deployment labs.</p>
         
-                <div style="background: rgba(56, 189, 248, 0.05); padding: 25px; border-radius: 8px; border: 1px dashed #38bdf8; margin-bottom: 25px; text-align: center;">
-            <h3 style="color: #e2e8f0; font-size: 1.2rem; margin-bottom: 10px; font-weight: 600;">Connecting Systems. Empowering Admins.</h3>
-            <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.5; margin-bottom: 0;">
+        <div class="showcase-box">
+            <div class="showcase-title">Connecting Systems. Empowering Admins.</div>
+            <div class="showcase-text">
                 SysAdmin Club is an international tech collective dedicated to enterprise infrastructure management, cloud innovations, and next-generation systems engineering.
-            </p>
+            </div>
         </div>
 
+        <div class="footer">
+            &copy; 2026 SysAdmin Club. All rights reserved.
+        </div>
+    </div>
 
 </body>
 </html>
-
